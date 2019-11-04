@@ -57,7 +57,7 @@ public class MongoPersonDaoServiceIT {
   // Uncomment @Test to enable this test
   //@Test
   @DisplayName("Update person")
-  @SeedWithDataset("/mongounit/createPersonWithExistingData-seed.json")
+  @SeedWithDataset("createPersonWithExistingData-seed.json")
   @AssertMatchesDataset
   void updatePerson() {
 
@@ -76,19 +76,9 @@ public class MongoPersonDaoServiceIT {
   // Uncomment @Test to enable this test
   //@Test
   @DisplayName("Delete person")
-  @SeedWithDataset("/mongounit/createPersonWithExistingData-seed.json")
+  @SeedWithDataset("createPersonWithExistingData-seed.json")
   @AssertMatchesDataset(additionalDataset = false)
   void deletePerson() {
-    mongoPersonDaoService.deletePerson("5db7545b7b615c739732c777");
-  }
-
-  // ***** NOTE: this test should fail because of a bug in the DAO service code
-  // Uncomment @Test to enable this test
-  //@Test
-  @DisplayName("Delete person")
-  @SeedWithDataset("/mongounit/createPersonWithExistingData-seed.json")
-  @AssertMatchesDataset
-  void deletePersonKeepCollections() {
     mongoPersonDaoService.deletePerson("5db7545b7b615c739732c777");
   }
 }
