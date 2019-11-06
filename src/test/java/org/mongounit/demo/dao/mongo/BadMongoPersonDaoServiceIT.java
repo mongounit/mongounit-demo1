@@ -64,7 +64,7 @@ class BadMongoPersonDaoServiceIT {
         .positionName("Builder")
         .build();
 
-    // Using THE API we are trying to get to SEED?! 🥶 😳
+    // Using THE API we are trying to test to SEED?! 🥶 😳
     // Alt. is to use manual MongoTemplate is super prone to mistakes - we'd need to test that!
     // At least we tested this method before, right?
     Person seededPerson = mongoPersonDaoService.createPerson(createRequest);
@@ -102,7 +102,7 @@ class BadMongoPersonDaoServiceIT {
         .positionName("Builder")
         .build();
 
-    // Using THE API we are trying to get to SEED?! 🥶 😳
+    // Using THE API we are trying to test to SEED?! 🥶 😳
     // Alt. is to use manual MongoTemplate is super prone to mistakes - we'd need to test that!
     // At least we tested this method before, right?
     Person seededPerson = mongoPersonDaoService.createPerson(createRequest);
