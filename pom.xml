@@ -11,7 +11,7 @@
   </parent>
   <groupId>org.mongounit</groupId>
   <artifactId>mongounit-demo1</artifactId>
-  <version>1.1.0-SNAPSHOT</version>
+  <version>1.1.0</version>
   <name>mongounit-demo1</name>
   <description>mongounit-demo1 is a demo project for MongoUnit framework</description>
 
